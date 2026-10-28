@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FFFD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дневник здоровья зубов"
+            android:textColor="#004D40"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Отмечай чистку зубов, нить, боль и визиты к стоматологу"
+            android:textColor="#455A64"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/todayStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#E0F2F1"
+            android:padding="14dp"
+            android:text="Статус дня"
+            android:textColor="#004D40"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recommendationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:text="Рекомендация"
+            android:textColor="#263238"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Ежедневные отметки"
+            android:textColor="#00695C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/morningButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#009688"
+            android:text="Отметить утреннюю чистку"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/eveningButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00897B"
+            android:text="Отметить вечернюю чистку"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/flossButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26A69A"
+            android:text="Отметить зубную нить / ирригатор"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Самочувствие"
+            android:textColor="#00695C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/painLevelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Боль / чувствительность от 0 до 10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/noteEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Заметка: кровоточивость, боль, брекеты, десна..."
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/saveFeelingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00796B"
+            android:text="Сохранить самочувствие"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Визит к стоматологу"
+            android:textColor="#00695C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dentistDateEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дата визита: 2026-06-20"
+            android:inputType="date"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/dentistTimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Время визита: 14:30"
+            android:inputType="time"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/saveDentistButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00695C"
+            android:text="Сохранить визит и напоминание"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/nextDentistText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:text="Визит не запланирован"
+            android:textColor="#263238"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/remindersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#004D40"
+            android:text="Включить ежедневные напоминания"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/resetTodayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#78909C"
+            android:text="Сбросить отметки за сегодня"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clearHistoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B71C1C"
+            android:text="Очистить историю"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="История записей"
+            android:textColor="#00695C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/historyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:text="История пока пустая"
+            android:textColor="#263238"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
